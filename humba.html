@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/recipe.css">
     <link rel="icon" href="./assets/icons/ChadaCucina.png">
     <title> Chada Cucina </title>
   </head>
@@ -56,66 +57,34 @@
     </nav>
     </header>   
       <main class="main">
-        <section>
-        <div class="pic-ctn1">
-          <div class="pic-slider">
-            <img src="./assets/images/about/cc1 1.png" alt="Image1" class="pic">
-            <img src="./assets/images/about/cc1 2.png" alt="Image2" class="pic">
-          </div>
-          <div class="button-ctn">
-            <button class="button-about" onclick="showPic(1)"></button>
-            <button class="button-about" onclick="showPic(2)"></button>
-          </div>
-        </div>
-        </section>
-
-        <section class="container history" id="history">
-        <span class="section-subtitle"> HISTORY</span>
-        <h2 class="section-title">Chada Cucina</h2>
-          <div class="sub-title">
-            <p>Chada Cucina is a food blog and shopping site that specializes in Filipino cuisine. The site was founded in 2022 by two student Filipino food enthusiasts who wanted to share their love for the rich and diverse flavors of Filipino cooking with the world.</p>
-            <p>At first, Chada Cucina started out as a simple blog where the founders shared their favorite Filipino recipes and cooking tips. However, as the blog gained popularity, the founders decided to expand their offerings and create a platform where people could order Filipino foods and see the ingredients used in their preparation.</p>
-            <p>Over the years, Chada Cucina has become a go-to source for Filipino food lovers all over the world. The site offers a wide variety of Filipino dishes, from classic favorites like adobo and pancit to lesser-known regional specialties. Each recipe is carefully curated and accompanied by detailed instructions, making it easy for even novice cooks to recreate the dishes at home.</p>
-            <p>In addition to recipes, Chada Cucina also offers an online store where customers can purchase ingredients, cooking tools, and other food-related products. The store carries a range of products, from staple ingredients like rice and vinegar to specialty items like banana leaves and shrimp paste.</p>
-            <p>Today, Chada Cucina is a thriving online community of Filipino food enthusiasts, home cooks, and professional chefs. The site continues to evolve and expand, with new recipes, products, and features being added all the time. Whether you're a longtime fan of Filipino cuisine or a curious newcomer, Chada Cucina is the perfect place to explore the delicious flavors and rich culinary traditions of the Philippines.</p>
-        </div>
+        <section class="container humba" id="humba">
+        <h2 class="recipe-title">Humba Recipe</h2>
       </section>
 
       <section>
-      <span class="section-subtitle">FOUNDERS SPOTLIGHT</span>
-      <h2 class="section-title">Meet the Team</h2>
-
-          <div class="pic-ctn">
+          <div class="pic-rcp">
           <div class="pic-slider">
-            <img src="./assets/images/about/Yul.png" alt="Image1" class="pic">
-            <img src="./assets/images/about/Christian.png" alt="Image2" class="pic">
-          </div>
-          <div class="button-ctn">
-            <button class="button-about" onclick="showPic(1)"></button>
-            <button class="button-about" onclick="showPic(2)"></button>
+            <img src="./assets/images/recipe/humba.png" alt="Image1" class="pic">
           </div>
         </div>
     </section>
 
-    <section class="form">
-        <span class="section-subtitle">CHITCHAT</span>
-        <h2 class="section-title">Contact Us</h2>
-          <div>
-            <form action="" class="contact-form" onsubmit="return onSubmit();">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        </section>
-      </main>
+    <section class="serve-container">
+        <div class="serve-card">
+            <img src="./assets/images/recipe/cooking.png" alt="" class="cooking">
+        </div>
+        <div class="serve-card">
+        <img src="./assets/images/recipe/clock.png" alt="">
+        </div>
+        <div class="serve-card">
+        <img src="./assets/images/recipe/food-tray.png" alt="">
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+    </main>
 
       <footer class="footer">
         <div class="footer-container container grid">
@@ -228,6 +197,16 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-line"></i>
   </a>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed(".auto-type", {
+          strings: ["bites!", "kites!", "ignites!"],
+          typeSpeed: 200,
+          backSpeed: 200,
+          loop: true
+      })
+  </script>
   <script src="./js/scrollreveal.min.js"></script>
   <script src="./js/main.js"></script>
   <script>

@@ -58,14 +58,26 @@
         </header>
 
         <main class="main">
-           <section class="popular section" id="popular"></section>
+            <section>
+                <div class="landing">
+                    <h1 class="big-title">Filipino Food</h1>
+                    <img src="./assets/images/categories/table.png" class="table translate" data-speed="2.5" alt="">
+                    <img src="./assets/images/categories/plate1copy.png" class="plate1 translate" data-speed="2.5" alt="">
+                    <img src="./assets/images/categories/plate2copy.png" class="plate2 translate" data-speed="2.5" alt="">
+                    <img src="./assets/images/categories/plate3.png" class="plate3 translate" data-speed="2.5" alt="">
+                    <img src="./assets/images/categories/plate4copy.png" class="plate4 translate" data-speed="2.5" alt="">
+                    <img src="./assets/images/categories/plate5.png" class="plate5 translate" data-speed="2.5" alt="">
+                </div>
+            </section>
+
+           <section class="popular section" id="popular">
             <span class="section-subtitle"> THE BEST FOOD</span>
             <h2 class="section-title">Popular Dishes</h2>
 
             <div class="popular-container container grid">
                 <article class="popular-card">
-                    <img src="./assets/images/categories/humba.jpg" alt="popular image" class="popular-img">
-                
+                    <img src="./assets/images/categories/img-humba.png" alt="popular image" class="popular-img">
+
                     <h3 class="popular-name">Humba</h3>
                     <span class="popular-description">made with pork belly that are simmered in a sauce made with soy sauce, vinegar, brown sugar, garlic, and other spices.</span>
                     <span class="popular-price">₱ 150</span>
@@ -75,7 +87,7 @@
                     </button>
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/chickenadobo.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-adobo.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Chicken Adobo</h3>
                     <span class="popular-description">a flavorful dish made with meat (usually chicken or pork) marinated in vinegar, soy sauce, and garlic.</span>
@@ -86,7 +98,7 @@
                     </button>
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/sisig.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-sisig.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Sisig</h3>
                     <span class="popular-description">a sizzling pork dish made with chopped pig's head and liver, seasoned with calamansi and chili peppers.</span>
@@ -97,7 +109,7 @@
                     </button>
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/crispypata.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-pacit.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Crispy Pata</h3>
                     <span class="popular-description">a deep-fried pork knuckle that's crispy on the outside and tender on the inside.</span>
@@ -109,7 +121,7 @@
 
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/mechado.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-pinakbet.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Mechado</h3>
                     <span class="popular-description">a beef stew made with tomato sauce, soy sauce, and various spices.</span>
@@ -121,7 +133,7 @@
 
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/bistek.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-bistek.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Bistek</h3>
                     <span class="popular-description">a beef dish marinated in soy sauce and calamansi, topped with caramelized onions.</span>
@@ -133,7 +145,7 @@
 
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/sinigang.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-sinigang.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Sinigang</h3>
                     <span class="popular-description">a sour soup dish made with meat (usually pork or beef) and vegetables such as tamarind, tomato, and onion.</span>
@@ -145,7 +157,7 @@
 
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/lechon.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-sweetandsourfish.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Lechon</h3>
                     <span class="popular-description">a whole roasted pig that is a staple in Filipino celebrations.<br></br></span>
@@ -157,7 +169,7 @@
 
                 </article>
                 <article class="popular-card">
-                    <img src="./assets/images/categories/chickenafritada.jpg" alt="popular image" class="popular-img">
+                    <img src="./assets/images/categories/img-afritada.png" alt="popular image" class="popular-img">
                 
                     <h3 class="popular-name">Chicken Afritada</h3>
                     <span class="popular-description">chicken stewed in a tomato-based sauce with vegetables such as potatoes, carrots, and bell peppers.</span>
@@ -168,6 +180,7 @@
                     </button>
 
                 </article>
+            </section>
             </div>
         </main>
 
@@ -282,16 +295,6 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line"></i>
         </a>
-
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".auto-type", {
-                strings: ["bites!", "kites!", "ignites!"],
-                typeSpeed: 200,
-                backSpeed: 200,
-                loop: true
-            })
-        </script>
         <script src="./js/scrollreveal.min.js"></script>
         <script src="./js/main.js"></script>
     </body>

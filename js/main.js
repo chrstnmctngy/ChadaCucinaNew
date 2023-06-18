@@ -51,6 +51,10 @@ sr.reveal('.popular-container')
 sr.reveal('.features-card')
 sr.reveal('.about-data')
 sr.reveal('.about-img')
+sr.reveal('.sub-title')
+sr.reveal('.pic-ctn')
+sr.reveal('.form')
+
 
 
 const themeButton = document.getElementById('theme-button')
@@ -73,4 +77,22 @@ themeButton.addEventListener('click', () =>{
     themeButton.classList.toggle(iconTheme)
     localStorage.setItem('selected-item', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+const translate = document.querySelectorAll(".translate");
+const big_title = document.querySelectorAll(".big-title");
+const landing = document.querySelectorAll(".landing");
+
+let landing_height = landing.offsetHeight;
+
+window.addEventListener('scroll', () => {
+    let scroll = window.pageYOffset;
+
+    translate.forEach(element => {
+        let speed = element.dataset.speed;
+        element.style.transform = `translate(${scroll * speed}px)`;
+    })
+    
+    big_title.style.opacity = -scroll / (landing_height/2) + 1;
+
 })
