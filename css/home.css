@@ -226,6 +226,61 @@ body.dark-theme{
         margin-top: 7%;
     }
 
+    .plate1 {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        width: 450px;
+        z-index: 19;
+    }
+
+    .plate2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        z-index: 20;
+        overflow: hidden;
+    }
+
+    .plate3 {
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        width: 500px;
+        z-index: 20;
+        overflow: hidden;
+    }
+
+    .plate4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 500px;
+        z-index: 20;
+        overflow: hidden;
+    }
+    
+    .plate5 {
+        position: absolute;
+        top: -150px;
+        right: 0;
+        width: 500px;
+        z-index: 19;
+    }
+
+    .big-title {
+        position: absolute;
+        z-index: 30;
+        line-height: 4rem;
+        top: calc(50% - 2rem);
+        width: 100%;
+        text-align: center;
+        font-size: var(--biggest-font-size);
+        font-family: var(--title-font);
+        color: #fff;
+    }
+
 @media screen and (max-width: 767px) {
     .nav-menu{
         position: fixed;
@@ -587,6 +642,11 @@ body.dark-theme{
     border-radius: 1rem;
     text-align: center;
 } 
+
+.link {
+    color: inherit;
+    text-decoration: none;
+  }
 
 .popular-img {
     width: 220px;
@@ -965,62 +1025,6 @@ body.dark-theme{
     .table {
         width: 100%;
         height: 100%;
-    }
-
-    .plate1 {
-        position: absolute;
-        top: -120px;
-        left: 0;
-        width: 450px;
-        z-index: 19;
-    }
-
-    .plate2 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 500px;
-        z-index: 20;
-        overflow: hidden;
-    }
-
-    .plate3 {
-        position: absolute;
-        top: 20%;
-        left: 35%;
-        width: 500px;
-        z-index: 20;
-        overflow: hidden;
-    }
-
-    .plate4 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 500px;
-        z-index: 20;
-        overflow: hidden;
-    }
-    
-    .plate5 {
-        position: absolute;
-        top: -150px;
-        right: -60;
-        width: 500px;
-        z-index: 19;
-    }
-
-
-    .big-title {
-        position: absolute;
-        z-index: 30;
-        line-height: 4rem;
-        top: calc(50% - 2rem);
-        width: 100%;
-        text-align: center;
-        font-size: var(--biggest-font-size);
-        font-family: var(--title-font);
-        color: #fff;
     }
 
     .popular {

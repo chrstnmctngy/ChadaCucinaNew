@@ -54,7 +54,12 @@ sr.reveal('.about-img')
 sr.reveal('.sub-title')
 sr.reveal('.pic-ctn')
 sr.reveal('.form')
-
+sr.reveal('.recipe-title')
+sr.reveal('.pic-rcp')
+sr.reveal('.serve-container')
+sr.reveal('.ingredient-container')
+sr.reveal('.suggested-container')
+sr.reveal('.suggested-title')
 
 
 const themeButton = document.getElementById('theme-button')
@@ -82,17 +87,21 @@ themeButton.addEventListener('click', () =>{
 const translate = document.querySelectorAll(".translate");
 const big_title = document.querySelectorAll(".big-title");
 const landing = document.querySelectorAll(".landing");
+const shadow = document.querySelectorAll(".shadow")
+const section = document.querySelectorAll(".section")
 
 let landing_height = landing.offsetHeight;
+let section_height = section.offsetHeight;
 
 window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
+    let scroll = window.scrollY;
 
     translate.forEach(element => {
         let speed = element.dataset.speed;
-        element.style.transform = `translate(${scroll * speed}px)`;
+        element.style.transform = `translateY(${scroll * speed}px)`;
     })
     
     big_title.style.opacity = -scroll / (landing_height/2) + 1;
+    shadow.style.height = `${scroll * 0.5 + 300}px`;
 
 })
