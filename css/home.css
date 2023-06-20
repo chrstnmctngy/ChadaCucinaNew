@@ -505,8 +505,12 @@ body.dark-theme{
   }
 
   .pic1 {
-    width: 34%;
-    gap: 10%;
+    max-width: 33.33%;
+  }
+
+    .pic {
+    width: calc(100% / 3);
+    height: 100%;
   }
   
   .prev-button,
@@ -659,9 +663,12 @@ body.dark-theme{
 
 .popular-img {
     width: 200px;
-    height: 140px;
+    height: 150px;
     object-fit: cover;
+    max-width: fit-content;
 }
+
+
 
 .popular-name {
     font-size: var(--h3-font-size);
@@ -865,6 +872,11 @@ body.dark-theme{
     .home-title{
         font-size: 2rem;
     }
+
+    .popular-img {
+        max-width: fit-content;
+        height: 150px;
+    }
     
     .footer-content{
         gap: 1.5rem;
@@ -880,9 +892,8 @@ body.dark-theme{
     }
 
     .popular-img {
-        width: 200px;
-        height: 140px;
-        object-fit: cover;
+        max-width: fit-content;
+        height: 150px;
     }
 
     .footer-content{
@@ -918,9 +929,8 @@ body.dark-theme{
     }
 
     .popular-img {
-        width: 200px;
-        height: 140px;
-        object-fit: cover;
+        max-width: fit-content;
+        height: 150px;
     }
 
     .footer-content{
