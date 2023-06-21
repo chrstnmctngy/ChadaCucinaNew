@@ -83,25 +83,3 @@ themeButton.addEventListener('click', () =>{
     localStorage.setItem('selected-item', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-const translate = document.querySelectorAll(".translate");
-const big_title = document.querySelectorAll(".big-title");
-const landing = document.querySelectorAll(".landing");
-const shadow = document.querySelectorAll(".shadow")
-const section = document.querySelectorAll(".section")
-
-let landing_height = landing.offsetHeight;
-let section_height = section.offsetHeight;
-
-window.addEventListener('scroll', () => {
-    let scroll = window.scrollY;
-
-    translate.forEach(element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
-    })
-    
-    big_title.style.opacity = -scroll / (landing_height/2) + 1;
-    shadow.style.height = `${scroll * 0.5 + 300}px`;
-
-})
